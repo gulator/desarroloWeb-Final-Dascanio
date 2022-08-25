@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.bg{
+    height: 500px;
+    object-fit: cover;
+}
+.container{
+    margin: 20px;
+    
+}
+header{
+    height: 80px;
+}
+.mainBanner{
+    height: calc(100vh - 80px);
+    background-image: url("/img/BG-1.webp");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-clip: content-box;
+    background-position-x: right;
+}
+
+.favionImagen{
+    filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
+}
+html{
+    background: #0b0b0b;
+    
+}
+.icono{
+    width: 60px;
+    filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
+    animation-name: colores;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    color: #d6a84a;
+}
+@keyframes colores{
+    0%{
+        filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
+    }
+    30%{
+        filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
+    }
+    50%{
+        filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
+    }
+    80%{
+        filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
+    }
+    100%{
+        filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
+    }
+    
+}

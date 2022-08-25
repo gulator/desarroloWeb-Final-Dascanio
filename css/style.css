@@ -1,0 +1,57 @@
+.btn{
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(195, 195, 195);
+    font-size: 1rem;
+    color: whitesmoke;
+    border: 0px solid grey;
+    border-radius: 50px;
+    box-shadow: 1px 1px 2px grey, -1px 1px 2px grey;
+    margin: 10px;
+
+}
+
+.btn:hover{
+    border-radius: 50px;
+    width: 200px;
+    background-color: #0099bc;
+    background-color: whitesmoke;
+    
+    color: orange;
+    box-shadow: 6px 6px 12px rgb(210, 210, 210), -6px 6px 12px rgb(210,210,210);
+    
+    animation-name: morph;
+    animation-duration: 0.4s;
+}
+.btn:active{
+    background-color: #005163;
+    color: greenyellow;
+}
+
+@keyframes morph {
+    from{
+        box-shadow: 1px 1px 1px grey, -1px 1px 0px grey;
+        width: 100px; 
+    }
+    to{
+        box-shadow: 6px 6px 12px rgb(210, 210, 210), -6px 6px 12px rgb(210,210,210);
+        width: 200px;
+    }
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    font-size: large;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
