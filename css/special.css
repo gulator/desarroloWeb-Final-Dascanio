@@ -17,7 +17,7 @@ header{
 }
 .mainBanner{
     height: calc(100vh - 80px);
-    background-image: url("img/BG-1.webp");
+    background-image: url("./img/BG-1.webp");
     background-size:cover;
     background-repeat:no-repeat;
     background-clip: content-box;
