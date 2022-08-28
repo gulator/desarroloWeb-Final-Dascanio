@@ -24,6 +24,17 @@ header{
     background-position-x: right;
 }
 
+@media (max-width: 500px){
+    .mainBanner{
+        height: calc(100vh - 80px);
+        background-image: url("../img/BG-1-M.webp");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-clip: content-box;
+        background-position-x: right;
+    }
+}
+
 .favionImagen{
     filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
 }
