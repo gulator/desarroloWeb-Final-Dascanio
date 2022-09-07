@@ -1,22 +1,48 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Rufina', serif;
+    font-size: 0.90rem
 }
 
-.bg{
-    height: 500px;
-    object-fit: cover;
+body{
+    background-color: #000000;
+
 }
-.container{
-    margin: 20px;
+.contenedorMenu{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 15px;
+}
+.contenedorHeader{
+    margin: 10px 15px;
+}
+
+.navMenu{
+    display: flex;
+    align-items: center;
+}
+.navMenu ul{
+    display: flex;
+    margin: 0px;
     
 }
-header{
-    height: 80px;
+.navMenu li, a{
+   
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+    color: #ceb98e;
+    text-transform: uppercase;
+    letter-spacing: 0.1em
 }
+.navMenu li, a:hover{
+    color: #d89818;
+}
+
+
 .mainBanner{
-    height: calc(100vh - 80px);
+    height: 100vh;
     background-image: url("../img/BG-1.webp");
     background-size:cover;
     background-repeat:no-repeat;
@@ -26,7 +52,7 @@ header{
 
 @media (max-width: 500px){
     .mainBanner{
-        height: calc(100vh - 80px);
+        height: 100vh;
         background-image: url("../img/BG-1-M.webp");
         background-size:cover;
         background-repeat:no-repeat;
@@ -39,32 +65,25 @@ header{
     filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
 }
 html{
-    background: #0b0b0b;
-    
+    background: #0b0b0b;    
+}
+h1{
+    color: #5A5A5A;
 }
 .icono{
-    width: 60px;
+    margin: 25px;
+    width: 40px;
     filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
     animation-name: colores;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    color: #d6a84a;
+    color: #E1B378;
 }
-@keyframes colores{
-    0%{
-        filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
-    }
-    30%{
-        filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
-    }
-    50%{
-        filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
-    }
-    80%{
-        filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
-    }
-    100%{
-        filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%);
-    }
-    
+
+.mainBG{
+    height: 100vh;
+    background-image: url("../img/sallon1.webp");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position-x: center;
 }
