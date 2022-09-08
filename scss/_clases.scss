@@ -1,0 +1,149 @@
+@import "estilos";
+
+.contenedorMenu {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 15px;
+}
+
+.contenedorHeader {
+    width: 450px;
+    /*margin: 10px 15px;*/
+    position: relative;
+    top: 25vh;
+    left: 15vw;
+}
+
+h1 {
+    color: $color-naranja;
+    font-size: 4rem;
+    text-align: center;
+}
+h2{
+    color: $color-darvys-grey;
+    text-align: center;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+
+    ul {
+        display: flex;
+        margin: 0px;
+    }
+
+    li,
+    a {
+
+        list-style: none;
+        text-decoration: none;
+        margin: 5px;
+        color: $color-naranja-claro;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+
+        &:hover {
+            color: $color-naranja;
+        }
+    }
+}
+
+.mainBanner {
+    height: 100vh;
+    background-image: url("../img/BG-1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position-x: right;
+}
+
+.favionImagen {
+    filter: $color-naranja-filter1;
+}
+
+
+
+.icono {
+    margin: 25px;
+    width: 40px;
+    filter: $color-naranja-filter2;
+    animation-name: colores;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    color: $color-naranja;
+}
+
+.mainBG {
+    height: 50vh;
+    background-image: url("../img/sallon1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: $color-smoky-black;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-evenly;
+
+    a,
+    p {
+        margin-top: 15px;
+        color: $color-darvys-grey;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.footerBottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+
+    p {
+        margin: 10px 0px;
+        color: $color-darvys-grey;
+        font-size: 0.75rem;
+    }
+}
+
+.redes {
+    margin: 0px 25px;
+}
+
+.iconoRedes {
+    margin: 3px;
+    width: 17px;
+    filter: $color-gris-filter;
+
+    &:hover {
+        filter: $color-naranja-filter1;
+        scale: 115%;
+        animation-name: redes;
+        animation-duration: 700ms;
+
+    }
+}
+
+@keyframes redes {
+    from {
+        scale: 100%;
+    }
+
+    to {
+
+        scale: 115%;
+    }
+}

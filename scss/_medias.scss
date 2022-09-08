@@ -1,0 +1,11 @@
+@media (max-width: 500px){
+    .mainBanner{        
+        height: 100vh;
+        background-image: url("../img/BG-1-M.webp");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-clip: content-box;
+        background-position-x: right;
+        
+    }
+}
