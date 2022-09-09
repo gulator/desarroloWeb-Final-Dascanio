@@ -19,7 +19,8 @@ h1 {
     font-size: 4rem;
     text-align: center;
 }
-h2{
+
+h2 {
     color: $color-darvys-grey;
     text-align: center;
 }
@@ -88,6 +89,7 @@ footer {
     justify-content: space-evenly;
     height: 100px;
     background-color: $color-smoky-black;
+    margin-top: 10px;
 }
 
 .footerTop {
@@ -146,4 +148,79 @@ footer {
 
         scale: 115%;
     }
+}
+
+.seccionIndex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.seccionIndex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imagenIndex {
+    width: 65vw;
+}
+
+.textoSeccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+
+    h3 {
+        color: $color-naranja-claro;
+        text-align: left;
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: $color-darvys-grey;
+        text-align: left;
+    }
+}
+
+.Alt {
+    flex-direction: row
+}
+
+.derecha {
+    padding-right: 30px;
+    align-items: flex-end;
+
+    h3,
+    p {
+        text-align: right;
+
+    }
+}
+.testimonials{
+    margin: 50px 10px;    
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardTestimonial{
+    display: flex;
+    align-items: center;    
+    width: 30vw;
+    height: auto;
+    min-height: 80px;
+    background-color: $color-eerie-black;
+    border: 0px solid;
+    border-radius: 10px;
+
+    p{
+        margin: 5px;
+        color: $color-darvys-grey;
+        text-align: center;
+    }
+}
+.imgTestimonial{
+    width: 50px;
+    margin: 8px;
+    border: 0px solid;
+    border-radius: 50%;
 }
