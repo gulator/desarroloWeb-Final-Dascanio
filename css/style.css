@@ -18,22 +18,28 @@ body {
 .contenedorHeader {
   width: 450px;
   /*margin: 10px 15px;*/
-  position: relative;
-  top: 25vh;
-  left: 15vw; }
+  position: absolute;
+  top: 40vh;
+  left: 15vw;
+  z-index: 2; }
 
 h1 {
   color: #E1B378;
   font-size: 4rem;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
 
 h2 {
   color: #5a5a5a;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
 
 .navMenu {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-left: 15px;
+  position: relative;
+  z-index: 2; }
   .navMenu ul {
     display: flex;
     margin: 0px; }
@@ -110,13 +116,13 @@ footer {
 
 .iconoRedes {
   margin: 3px;
-  width: 17px;
+  width: 25px;
   filter: invert(36%) sepia(0%) saturate(1262%) hue-rotate(144deg) brightness(93%) contrast(88%); }
   .iconoRedes:hover {
     filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%);
     scale: 115%;
     animation-name: redes;
-    animation-duration: 700ms; }
+    animation-duration: 400ms; }
 
 @keyframes redes {
   from {
@@ -160,8 +166,8 @@ footer {
     text-align: right; }
 
 .testimonials {
-  margin: 50px 10px;
   display: flex;
+  margin: 50px 10px;
   justify-content: space-evenly; }
 
 .cardTestimonial {
@@ -184,6 +190,41 @@ footer {
   border: 0px solid;
   border-radius: 50%; }
 
+.containerEquipo {
+  display: flex;
+  flex-direction: column; }
+  .containerEquipo h3 {
+    text-align: center;
+    color: #ceb98e;
+    text-transform: uppercase; }
+
+.equipo {
+  display: flex;
+  margin: 50px 10px;
+  justify-content: space-evenly; }
+
+.cardEquipo {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 500px; }
+  .cardEquipo p {
+    margin: 5px;
+    color: #5a5a5a;
+    text-align: center; }
+
+.imgEquipo {
+  width: 30vw;
+  height: 400px;
+  object-fit: cover;
+  object-position: top; }
+
+.navbar-toggler {
+  border: 0px solid #ceb98e; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28206, 185, 142, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
 @media (max-width: 500px) {
   .mainBanner {
     height: 100vh;
@@ -191,4 +232,26 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
-    background-position-x: right; } }
+    background-position-x: right; }
+  .contenedorHeader {
+    width: 350px;
+    /*margin: 10px 15px;*/
+    position: absolute;
+    top: 0px;
+    bottom: 10vh;
+    left: 5vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 15vh; }
+  h1 {
+    color: #E1B378;
+    font-size: 1.75rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+  h2 {
+    font-size: 1.5rem;
+    color: #5a5a5a;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); } }
