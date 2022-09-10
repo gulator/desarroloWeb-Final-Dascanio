@@ -2,6 +2,7 @@ $color-naranja: #E1B378;
 $color-naranja-claro: #ceb98e;
 $color-blanco: #ffffff;
 $color-silver-chalice: #ADADAD;
+$color-silve-darker: #848484;
 $color-darvys-grey: #5a5a5a;
 $color-eerie-black: #1B1B1B;
 $color-smoky-black: #111111;
@@ -12,6 +13,6 @@ $color-gris-filter: invert(36%) sepia(0%) saturate(1262%) hue-rotate(144deg) bri
 
 @mixin displayCards {
     display: flex;
-    margin: 50px 10px;
+    margin: 40px 10px 10px 10px;
     justify-content: space-evenly;
 }
