@@ -1,5 +1,6 @@
 @import "estilos";
 
+
 .contenedorMenu {
     display: flex;
     justify-content: flex-start;
@@ -13,6 +14,10 @@
     top: 40vh;
     left: 15vw;
     z-index: 2;
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -29,6 +34,18 @@ h2 {
     text-align: center;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 
+}
+.btn{
+    margin: 0;
+    background-color: $color-eerie-black;    
+    font-size: 1.1rem;
+    color: $color-naranja-claro;
+    &:hover{
+        background-color: $color-naranja;
+    }
+    &:active{
+        background-color: $color-naranja-fuerte;
+    }
 }
 
 .navMenu {
@@ -67,6 +84,9 @@ h2 {
     background-clip: content-box;
     background-position-x: right;
 }
+.precioBanner{
+    background-image: url("../img/BG-precios.jpg");
+}
 
 .favionImagen {
     filter: $color-naranja-filter1;
@@ -99,6 +119,7 @@ footer {
     height: 100px;
     background-color: $color-smoky-black;
     margin-top: 10px;
+    margin: 0;
 }
 
 .footerTop {
@@ -282,4 +303,37 @@ footer {
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28206, 185, 142, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.servicioCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    margin: 15px 5px;   
+    
+    overflow: hidden;
+
+    h3{
+        color: $color-naranja-claro;
+        text-align: center;
+    }
+
+}
+
+.elementosServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgServicio{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;    
+}
+.margen{
+    margin-top: 30px
 }

@@ -21,7 +21,11 @@ body {
   position: absolute;
   top: 40vh;
   left: 15vw;
-  z-index: 2; }
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
 
 h1 {
   color: #E1B378;
@@ -33,6 +37,16 @@ h2 {
   color: #848484;
   text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
+
+.btn {
+  margin: 0;
+  background-color: #1B1B1B;
+  font-size: 1.1rem;
+  color: #ceb98e; }
+  .btn:hover {
+    background-color: #E1B378; }
+  .btn:active {
+    background-color: #ec8f16; }
 
 .navMenu {
   display: flex;
@@ -63,6 +77,9 @@ h2 {
   background-clip: content-box;
   background-position-x: right; }
 
+.precioBanner {
+  background-image: url("../img/BG-precios.jpg"); }
+
 .favionImagen {
   filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%); }
 
@@ -88,7 +105,8 @@ footer {
   justify-content: space-evenly;
   height: 100px;
   background-color: #111111;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin: 0; }
 
 .footerTop {
   display: flex;
@@ -230,6 +248,32 @@ footer {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28206, 185, 142, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
+.servicioCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  margin: 15px 5px;
+  overflow: hidden; }
+  .servicioCard h3 {
+    color: #ceb98e;
+    text-align: center; }
+
+.elementosServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.imgServicio {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 10px; }
+
+.margen {
+  margin-top: 30px; }
+
 @media (max-width: 500px) {
   .mainBanner {
     height: 100vh;
@@ -238,11 +282,13 @@ footer {
     background-repeat: no-repeat;
     background-clip: content-box;
     background-position-x: right; }
+  .precioBanner {
+    background-image: url("../img/BG-precios.jpg"); }
   .contenedorHeader {
     height: 50vh;
     width: 70%;
     position: absolute;
-    top: 70vh;
+    /*top: 70vh;*/
     left: 15vw; }
   h1 {
     font-size: 2.25rem; }
@@ -258,8 +304,10 @@ footer {
     .textoSeccion h3,
     .textoSeccion p {
       text-align: center; }
+    .textoSeccion h3 {
+      font-size: calc(1.2rem + .3vw); }
     .textoSeccion p {
-      font-size: 1rem; }
+      font-size: 0.9rem; }
   .testimonials {
     flex-wrap: wrap;
     align-items: center; }
@@ -282,9 +330,11 @@ footer {
       margin-top: 5px; }
   .imgEquipo {
     width: 95vw;
-    height: 80vh; } }
+    height: 80vh; }
+  .imgServicio {
+    min-width: 300px; } }
 
-@media (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 768px) {
   .mainBanner {
     height: 100vh;
     background-image: url("../img/BG-1-M.webp");
@@ -292,6 +342,8 @@ footer {
     background-repeat: no-repeat;
     background-clip: content-box;
     background-position-x: right; }
+  .precioBanner {
+    background-image: url("../img/BG-precios.jpg"); }
   .contenedorHeader {
     height: 50vh;
     width: 70%;
@@ -312,4 +364,14 @@ footer {
     flex-direction: column;
     width: 85vw;
     min-height: 150px;
-    margin: 10px 0px; } }
+    margin: 10px 0px; }
+  .textoSeccion {
+    align-items: center;
+    padding: 15px; }
+    .textoSeccion h3,
+    .textoSeccion p {
+      text-align: center; }
+    .textoSeccion h3 {
+      font-size: calc(1.2rem + .3vw); }
+    .textoSeccion p {
+      font-size: 0.9rem; } }
