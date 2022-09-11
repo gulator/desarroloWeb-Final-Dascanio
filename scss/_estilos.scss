@@ -16,3 +16,13 @@ $color-gris-filter: invert(36%) sepia(0%) saturate(1262%) hue-rotate(144deg) bri
     margin: 40px 10px 10px 10px;
     justify-content: space-evenly;
 }
+
+@mixin bannerCentral {
+    height: 100vh;
+    background-image: url("../img/BG-1-M.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position-x: right;
+}
+

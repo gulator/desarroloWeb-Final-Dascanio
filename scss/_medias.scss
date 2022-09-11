@@ -1,12 +1,6 @@
 @media (max-width: 500px) {
     .mainBanner {
-        height: 100vh;
-        background-image: url("../img/BG-1-M.webp");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-clip: content-box;
-        background-position-x: right;
-
+        @include bannerCentral
     }
 
     .contenedorHeader {
@@ -18,73 +12,118 @@
     }
 
     h1 {
-        color: $color-naranja;
         font-size: 2.25rem;
-        text-align: center;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
 
     }
 
     h2 {
         font-size: 1.75rem;
-        color: $color-silve-darker;
-        text-align: center;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 
     }
 
     .seccionIndex {
         flex-wrap: wrap;
     }
-    .imagenIndex{
-        width: 100vw;  
+
+    .imagenIndex {
+        width: 100vw;
     }
-    .textoSeccion{
+
+    .textoSeccion {
         align-items: center;
-        padding-left: 0;
         padding: 15px;
-        
-        h3,p {            
+
+        h3,
+        p {
             text-align: center;
         }
-    
+
         p {
-            font-size: 1rem;            
+            font-size: 1rem;
         }
-    
+
     }
-    .testimonials{
+
+    .testimonials {
         flex-wrap: wrap;
         align-items: center;
     }
+
     .cardTestimonial {
         justify-content: center;
         flex-direction: column;
         width: 95vw;
         min-height: 150px;
         margin: 10px 0px;
-    } 
-    .equipo{
+    }
+
+    .equipo {
         flex-direction: column;
-    } 
-    .cardEquipo{
+    }
+
+    .cardEquipo {
         width: 95vw;
         height: 92vh;
-        p{
+
+        p {
             margin-top: 25px;
         }
     }
-    .corta{
+
+    .corta {
         height: 85vh;
-        p{
+
+        p {
             margin-top: 5px;
         }
     }
+
     .imgEquipo {
         width: 95vw;
         height: 80vh;
-        
+
     }
 
+
+}
+
+@media (max-width: 768px) {
+    .mainBanner {
+        @include bannerCentral
+    }
+
+    .contenedorHeader {
+        height: 50vh;
+        width: 70%;
+        position: absolute;
+        top: 50vh;
+        left: 15vw;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    .imagenIndex {
+        width: 50vw;
+    }
+
+    .testimonials {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .cardTestimonial {
+        justify-content: center;
+        flex-direction: column;
+        width: 85vw;
+        min-height: 150px;
+        margin: 10px 0px;
+    }
 
 }

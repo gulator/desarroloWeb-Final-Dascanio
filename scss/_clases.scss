@@ -178,7 +178,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 30px;
+    padding: 20px;
 
     h3 {
         color: $color-naranja-claro;
@@ -197,7 +197,7 @@ footer {
 }
 
 .derecha {
-    padding-right: 30px;
+    padding: 20px;
     align-items: flex-end;
 
     h3,

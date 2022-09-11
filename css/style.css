@@ -146,7 +146,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 30px; }
+  padding: 20px; }
   .textoSeccion h3 {
     color: #ceb98e;
     text-align: left; }
@@ -159,7 +159,7 @@ footer {
   flex-direction: row; }
 
 .derecha {
-  padding-right: 30px;
+  padding: 20px;
   align-items: flex-end; }
   .derecha h3,
   .derecha p {
@@ -245,24 +245,18 @@ footer {
     top: 70vh;
     left: 15vw; }
   h1 {
-    color: #E1B378;
-    font-size: 2.25rem;
-    text-align: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+    font-size: 2.25rem; }
   h2 {
-    font-size: 1.75rem;
-    color: #848484;
-    text-align: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8); }
+    font-size: 1.75rem; }
   .seccionIndex {
     flex-wrap: wrap; }
   .imagenIndex {
     width: 100vw; }
   .textoSeccion {
     align-items: center;
-    padding-left: 0;
     padding: 15px; }
-    .textoSeccion h3, .textoSeccion p {
+    .textoSeccion h3,
+    .textoSeccion p {
       text-align: center; }
     .textoSeccion p {
       font-size: 1rem; }
@@ -289,3 +283,33 @@ footer {
   .imgEquipo {
     width: 95vw;
     height: 80vh; } }
+
+@media (max-width: 768px) {
+  .mainBanner {
+    height: 100vh;
+    background-image: url("../img/BG-1-M.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position-x: right; }
+  .contenedorHeader {
+    height: 50vh;
+    width: 70%;
+    position: absolute;
+    top: 50vh;
+    left: 15vw; }
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 2.25rem; }
+  .imagenIndex {
+    width: 50vw; }
+  .testimonials {
+    flex-wrap: wrap;
+    align-items: center; }
+  .cardTestimonial {
+    justify-content: center;
+    flex-direction: column;
+    width: 85vw;
+    min-height: 150px;
+    margin: 10px 0px; } }
