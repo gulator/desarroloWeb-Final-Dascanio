@@ -2,7 +2,8 @@
     .mainBanner {
         @include bannerCentral
     }
-    .precioBanner{
+
+    .precioBanner {
         background-image: url("../img/BG-precios.jpg");
     }
 
@@ -38,9 +39,11 @@
         p {
             text-align: center;
         }
-        h3{
+
+        h3 {
             font-size: calc(1.2rem + .3vw);
         }
+
         p {
             font-size: 0.9rem;
         }
@@ -86,17 +89,28 @@
         height: 80vh;
 
     }
-    .imgServicio{
-        min-width: 300px;      
-        
+
+    .imgServicio {
+        min-width: 300px;
+
     }
+
+    .precioCard {
+        margin: 35px 45px;
+    }
+
+    .campo {
+        width: 95vw;
+    }
+
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
     .mainBanner {
         @include bannerCentral
     }
-    .precioBanner{
+
+    .precioBanner {
         background-image: url("../img/BG-precios.jpg");
     }
 
@@ -132,6 +146,7 @@
         min-height: 150px;
         margin: 10px 0px;
     }
+
     .textoSeccion {
         align-items: center;
         padding: 15px;
@@ -140,13 +155,23 @@
         p {
             text-align: center;
         }
-        h3{
+
+        h3 {
             font-size: calc(1.2rem + .3vw);
         }
+
         p {
             font-size: 0.9rem;
         }
 
+    }
+
+    .precioCard {
+        margin: 35px 45px;
+    }
+
+    .campo {
+        width: 75vw;
     }
 
 }
