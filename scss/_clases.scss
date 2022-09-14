@@ -1,6 +1,6 @@
 @import "estilos";
 
-.naranja{
+.naranja {
     color: $color-naranja-claro;
 }
 
@@ -92,7 +92,19 @@ h2 {
 }
 
 .precioBanner {
-    background-image: url("../img/BG-precios.jpg");
+    background-image: url("../img/BG-precios-2.webp");
+}
+
+.servicioBanner {
+    background-image: url("../img/BG-servicios.webp");
+}
+
+.contactoBanner {
+    background-image: url("../img/BG-contacto.webp");
+}
+
+.galeriaBanner{
+    background-image: url("../img/BG-galeria2.jpg");
 }
 
 .favionImagen {
@@ -367,12 +379,13 @@ footer {
 
     p {
         text-align: center;
-                
+
     }
-    
+
 
 }
-.subtitulo{
+
+.subtitulo {
     font-size: 1.25rem;
     text-transform: uppercase;
 }
@@ -407,7 +420,8 @@ footer {
 .precio {
     font-size: 2rem;
 }
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,7 +429,8 @@ footer {
     height: 300px;
     margin-bottom: 30px;
 }
-.campo{
+
+.campo {
     width: 50vw;
     height: 30px;
     background-color: $color-smoky-black;
@@ -423,11 +438,55 @@ footer {
     color: $color-naranja-claro;
     border-radius: 3px;
     padding-left: 10px;
-   
+
 
 }
 
-.areaTexto{
+.areaTexto {
     @extend .campo;
     height: 100px;
+    padding-top: 10px;
+}
+
+.informacion {
+    margin: 20px 5px;
+}
+
+.contacto {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+
+    img {
+        width: 30px;
+        filter: $color-naranja-filter2;
+        margin-bottom: 5px
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-darvys-grey;
+    }
+}
+.galeria{
+    margin: 5px;
+}
+.img-galeria{
+    border-radius: 10px;
+    border: 1px solid $color-naranja-claro;
+    margin: 10px 0px;
+}
+
+.textoDescripcion{
+    font-size: 1rem;
+}
+.centrado{
+    text-align: center;
+    margin: 10px;
 }

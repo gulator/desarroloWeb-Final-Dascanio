@@ -1,10 +1,25 @@
 @media (max-width: 500px) {
     .mainBanner {
-        @include bannerCentral
+        @include bannerCentral;
+        background-position-x: -750px;
     }
 
     .precioBanner {
-        background-image: url("../img/BG-precios.jpg");
+        background-image: url("../img/BG-precios-2.webp");
+    }
+
+    .servicioBanner{
+        background-image: url("../img/BG-servicios-2.webp");
+        background-position-x: -320px;
+    }
+
+    .contactoBanner{
+        background-image: url("../img/BG-contacto.webp");
+    }
+
+    .galeriaBanner{
+        background-image: url("../img/BG-galeria2.jpg");
+        background-position-x: -750px;
     }
 
     .contenedorHeader {
@@ -100,7 +115,7 @@
     }
 
     .campo {
-        width: 95vw;
+        width: 85vw;
     }
 
 }
@@ -111,7 +126,20 @@
     }
 
     .precioBanner {
-        background-image: url("../img/BG-precios.jpg");
+        background-image: url("../img/BG-precios-2.webp");
+    }
+
+    .servicioBanner{
+        background-image: url("../img/BG-servicios-2.webp");
+    }
+
+    .contactoBanner{
+        background-image: url("../img/BG-contacto.webp");
+    }
+
+    .galeriaBanner{
+        background-image: url("../img/BG-galeria2.jpg");
+        
     }
 
     .contenedorHeader {
