@@ -1,32 +1,36 @@
 @media (max-width: 500px) {
     .mainBanner {
         @include bannerCentral;
-        background-position-x: -750px;
     }
 
     .precioBanner {
         background-image: url("../img/BG-precios-2.webp");
     }
 
-    .servicioBanner{
+    .servicioBanner {
         background-image: url("../img/BG-servicios-2.webp");
-        background-position-x: -320px;
+       
     }
 
-    .contactoBanner{
+    .contactoBanner {
         background-image: url("../img/BG-contacto.webp");
     }
 
-    .galeriaBanner{
+    .galeriaBanner {
         background-image: url("../img/BG-galeria2.jpg");
-        background-position-x: -750px;
+       
+    }
+
+    .nosotrosBanner {
+        background-image: url("../img/BG-nosotros.jpeg");
+        background-position-x: center;
     }
 
     .contenedorHeader {
         height: 50vh;
         width: 70%;
         position: absolute;
-        /*top: 70vh;*/
+        top: 50vh;
         left: 15vw;
     }
 
@@ -85,7 +89,7 @@
     .cardEquipo {
         width: 95vw;
         height: 92vh;
-
+        margin: 5px;   
         p {
             margin-top: 25px;
         }
@@ -100,9 +104,13 @@
     }
 
     .imgEquipo {
+        
         width: 95vw;
         height: 80vh;
 
+    }
+    .imgEquipoIndex{
+        max-width: 95vw;
     }
 
     .imgServicio {
@@ -118,6 +126,16 @@
         width: 85vw;
     }
 
+    .nosotrosCentral {
+        flex-direction: column;
+        /*align-items: center;*/
+    }
+
+    .nosotrosTexto,
+    .nosotrosImagen {
+        width: 100vw;
+
+    }
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
@@ -129,17 +147,22 @@
         background-image: url("../img/BG-precios-2.webp");
     }
 
-    .servicioBanner{
+    .servicioBanner {
         background-image: url("../img/BG-servicios-2.webp");
     }
 
-    .contactoBanner{
+    .contactoBanner {
         background-image: url("../img/BG-contacto.webp");
     }
 
-    .galeriaBanner{
+    .galeriaBanner {
         background-image: url("../img/BG-galeria2.jpg");
-        
+
+    }
+
+    .nosotrosBanner {
+        background-image: url("../img/BG-nosotros.jpeg");
+        background-position-x: center;
     }
 
     .contenedorHeader {
@@ -202,4 +225,18 @@
         width: 75vw;
     }
 
+    .nosotrosCentral {
+        flex-direction: column;
+        
+    }
+
+    .nosotrosTexto,
+    .nosotrosImagen {
+        width: 100vw;
+        p {
+           text-align: start;
+        }
+    
+    }   
+    
 }

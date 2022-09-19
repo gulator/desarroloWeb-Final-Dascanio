@@ -9,7 +9,8 @@ html {
   background: #111111; }
 
 body {
-  background-color: #111111; }
+  background-color: #111111;
+  overflow-x: hidden; }
 
 .naranja {
   color: #ceb98e; }
@@ -50,7 +51,14 @@ h2 {
   .btn:hover {
     background-color: #E1B378; }
   .btn:active {
-    background-color: #ec8f16; }
+    background-color: #C9852C; }
+
+.boton {
+  display: flex;
+  justify-content: center; }
+  .boton a {
+    text-decoration: none;
+    color: #808080; }
 
 .navMenu {
   display: flex;
@@ -71,7 +79,7 @@ h2 {
     letter-spacing: 0.1em; }
     .navMenu li:hover,
     .navMenu a:hover {
-      color: #E1B378; }
+      color: #C9852C; }
 
 .mainBanner {
   height: 100vh;
@@ -92,6 +100,10 @@ h2 {
 
 .galeriaBanner {
   background-image: url("../img/BG-galeria2.jpg"); }
+
+.nosotrosBanner {
+  background-image: url("../img/BG-nosotros.jpeg");
+  background-position-x: center; }
 
 .favionImagen {
   filter: invert(89%) sepia(59%) saturate(989%) hue-rotate(316deg) brightness(88%) contrast(90%); }
@@ -225,7 +237,8 @@ footer {
 .containerEquipo {
   display: flex;
   flex-direction: column;
-  margin-top: 40px; }
+  margin: 40px 0px 10px 0px;
+  width: 100vw; }
   .containerEquipo h3 {
     text-align: center;
     color: #ceb98e;
@@ -239,7 +252,7 @@ footer {
 .cardEquipo {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  margin: 5px;
   height: 450px; }
   .cardEquipo p {
     font-size: 1.15rem;
@@ -247,11 +260,17 @@ footer {
     color: #808080;
     text-align: center; }
 
+.muestra {
+  width: 30vw; }
+
 .imgEquipo {
-  width: 30vw;
+  max-width: 30vw;
   height: 400px;
   object-fit: cover;
   object-position: top; }
+
+.imgEquipoIndex {
+  max-width: 30vw; }
 
 .navbar-toggler {
   border: 0px solid #ceb98e;
@@ -346,6 +365,9 @@ footer {
   color: #ceb98e;
   border-radius: 3px;
   padding-left: 10px; }
+  .campo:focus, .areaTexto:focus {
+    outline: #E1B378;
+    border: 1px solid #E1B378; }
 
 .areaTexto {
   height: 100px;
@@ -378,12 +400,46 @@ footer {
   border: 1px solid #ceb98e;
   margin: 10px 0px; }
 
+.img-nosotros {
+  margin: 10px 0px; }
+
+.containerFig {
+  margin: 0px; }
+
 .textoDescripcion {
   font-size: 1rem; }
 
 .centrado {
   text-align: center;
   margin: 10px; }
+
+.nosotrosCentral {
+  display: flex; }
+
+.nosotrosTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+  margin: 5px;
+  padding: 10px; }
+  .nosotrosTexto p {
+    margin: 0;
+    font-size: calc(1rem + 0.25vw);
+    text-align: justify; }
+  .nosotrosTexto h3 {
+    color: #E1B378;
+    text-transform: uppercase;
+    text-align: center; }
+    .nosotrosTexto h3::after {
+      color: red; }
+
+.nosotrosImagen {
+  width: 50vw; }
+
+.containerImgEquipo {
+  text-align: center; }
 
 @media (max-width: 500px) {
   .mainBanner {
@@ -392,23 +448,23 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
-    background-position-x: right;
-    background-position-x: -750px; }
+    background-position-x: right; }
   .precioBanner {
     background-image: url("../img/BG-precios-2.webp"); }
   .servicioBanner {
-    background-image: url("../img/BG-servicios-2.webp");
-    background-position-x: -320px; }
+    background-image: url("../img/BG-servicios-2.webp"); }
   .contactoBanner {
     background-image: url("../img/BG-contacto.webp"); }
   .galeriaBanner {
-    background-image: url("../img/BG-galeria2.jpg");
-    background-position-x: -750px; }
+    background-image: url("../img/BG-galeria2.jpg"); }
+  .nosotrosBanner {
+    background-image: url("../img/BG-nosotros.jpeg");
+    background-position-x: center; }
   .contenedorHeader {
     height: 50vh;
     width: 70%;
     position: absolute;
-    /*top: 70vh;*/
+    top: 50vh;
     left: 15vw; }
   h1 {
     font-size: 2.25rem; }
@@ -441,7 +497,8 @@ footer {
     flex-direction: column; }
   .cardEquipo {
     width: 95vw;
-    height: 92vh; }
+    height: 92vh;
+    margin: 5px; }
     .cardEquipo p {
       margin-top: 25px; }
   .corta {
@@ -451,12 +508,20 @@ footer {
   .imgEquipo {
     width: 95vw;
     height: 80vh; }
+  .imgEquipoIndex {
+    max-width: 95vw; }
   .imgServicio {
     min-width: 300px; }
   .precioCard {
     margin: 35px 45px; }
   .campo, .areaTexto {
-    width: 85vw; } }
+    width: 85vw; }
+  .nosotrosCentral {
+    flex-direction: column;
+    /*align-items: center;*/ }
+  .nosotrosTexto,
+  .nosotrosImagen {
+    width: 100vw; } }
 
 @media (min-width: 501px) and (max-width: 768px) {
   .mainBanner {
@@ -474,6 +539,9 @@ footer {
     background-image: url("../img/BG-contacto.webp"); }
   .galeriaBanner {
     background-image: url("../img/BG-galeria2.jpg"); }
+  .nosotrosBanner {
+    background-image: url("../img/BG-nosotros.jpeg");
+    background-position-x: center; }
   .contenedorHeader {
     height: 50vh;
     width: 70%;
@@ -508,4 +576,12 @@ footer {
   .precioCard {
     margin: 35px 45px; }
   .campo, .areaTexto {
-    width: 75vw; } }
+    width: 75vw; }
+  .nosotrosCentral {
+    flex-direction: column; }
+  .nosotrosTexto,
+  .nosotrosImagen {
+    width: 100vw; }
+    .nosotrosTexto p,
+    .nosotrosImagen p {
+      text-align: start; } }

@@ -54,12 +54,24 @@ h2 {
     }
 }
 
+.boton{
+    display: flex;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        color: $color-darvys-grey;
+    }
+    
+}
+
+
 .navMenu {
     display: flex;
     align-items: center;
     margin-left: 15px;
     position: relative;
     z-index: 2;
+
 
     ul {
         display: flex;
@@ -77,7 +89,8 @@ h2 {
         letter-spacing: 0.1em;
 
         &:hover {
-            color: $color-naranja;
+            color: $color-naranja-fuerte;
+            
         }
     }
 }
@@ -105,6 +118,10 @@ h2 {
 
 .galeriaBanner{
     background-image: url("../img/BG-galeria2.jpg");
+}
+.nosotrosBanner{
+    background-image: url("../img/BG-nosotros.jpeg");
+    background-position-x: center;
 }
 
 .favionImagen {
@@ -279,7 +296,8 @@ footer {
 .containerEquipo {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin: 40px 0px 10px 0px;
+    width: 100vw;
 
     h3 {
         text-align: center;
@@ -289,13 +307,13 @@ footer {
 }
 
 .equipo {
-    @include displayCards
+    @include displayCards;
 }
 
 .cardEquipo {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    margin: 5px;
     height: 450px;
 
     p {
@@ -305,12 +323,18 @@ footer {
         text-align: center;
     }
 }
+.muestra{
+    width: 30vw;
+}
 
 .imgEquipo {
-    width: 30vw;
+    max-width: 30vw;
     height: 400px;
     object-fit: cover;
     object-position: top;
+}
+.imgEquipoIndex{
+    max-width: 30vw;
 }
 
 
@@ -428,6 +452,8 @@ footer {
     justify-content: space-between;
     height: 300px;
     margin-bottom: 30px;
+    
+
 }
 
 .campo {
@@ -438,7 +464,11 @@ footer {
     color: $color-naranja-claro;
     border-radius: 3px;
     padding-left: 10px;
+    &:focus{
 
+        outline: $color-naranja;
+        border: 1px solid $color-naranja
+    }
 
 }
 
@@ -482,6 +512,12 @@ footer {
     border: 1px solid $color-naranja-claro;
     margin: 10px 0px;
 }
+.img-nosotros{    
+    margin: 10px 0px;
+}
+.containerFig{
+    margin: 0px
+}
 
 .textoDescripcion{
     font-size: 1rem;
@@ -490,3 +526,42 @@ footer {
     text-align: center;
     margin: 10px;
 }
+.nosotrosCentral{
+    
+    display: flex;
+
+}
+.nosotrosTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    margin: 5px;
+    padding: 10px;
+    
+    p{
+        
+        margin: 0;
+        font-size: calc(1rem + 0.25vw);
+        text-align: justify;
+    }
+    h3{
+        color: $color-naranja;
+        text-transform: uppercase;
+        text-align: center;
+        &::after{
+            color: red;
+        }
+    }
+
+}
+.nosotrosImagen{
+    width: 50vw;
+    
+}
+.containerImgEquipo{
+    text-align: center;
+}
+
+
