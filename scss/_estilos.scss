@@ -15,7 +15,7 @@ $color-gris-filter: invert(36%) sepia(0%) saturate(1262%) hue-rotate(144deg) bri
 @mixin displayCards {
     display: flex;
     margin: 40px 10px 10px 10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 @mixin bannerCentral {

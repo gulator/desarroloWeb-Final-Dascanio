@@ -22,15 +22,26 @@ body {
 
 .contenedorHeader {
   width: 450px;
-  /*margin: 10px 15px;*/
   position: absolute;
   top: 40vh;
   left: 15vw;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center; }
+
+.caja {
+  z-index: 2;
+  width: 100vw;
+  height: 118px;
+  background-color: #1B1B1B;
+  opacity: 0.5;
+  position: absolute; }
+
+.textoPrinc {
+  position: absolute;
+  z-index: 4; }
 
 h1 {
   color: #E1B378;
@@ -65,7 +76,7 @@ h2 {
   align-items: center;
   margin-left: 15px;
   position: relative;
-  z-index: 2; }
+  /*z-index: 2;*/ }
   .navMenu ul {
     display: flex;
     margin: 0px; }
@@ -73,7 +84,7 @@ h2 {
   .navMenu a {
     list-style: none;
     text-decoration: none;
-    margin: 1px;
+    margin: none;
     color: #ceb98e;
     text-transform: uppercase;
     letter-spacing: 0.1em; }
@@ -102,7 +113,7 @@ h2 {
   background-image: url("../img/BG-galeria2.jpg"); }
 
 .nosotrosBanner {
-  background-image: url("../img/BG-nosotros.jpeg");
+  background-image: url("../img/BG-nosotros.webp");
   background-position-x: center; }
 
 .favionImagen {
@@ -211,7 +222,7 @@ footer {
 .testimonials {
   display: flex;
   margin: 40px 10px 10px 10px;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
 
 .cardTestimonial {
   display: flex;
@@ -244,10 +255,13 @@ footer {
     color: #ceb98e;
     text-transform: uppercase; }
 
+.alternativo {
+  --bs-gutter-x:1rem; }
+
 .equipo {
   display: flex;
   margin: 40px 10px 10px 10px;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
 
 .cardEquipo {
   display: flex;
@@ -270,7 +284,8 @@ footer {
   object-position: top; }
 
 .imgEquipoIndex {
-  max-width: 30vw; }
+  max-width: none;
+  width: 30vw; }
 
 .navbar-toggler {
   border: 0px solid #ceb98e;
@@ -309,7 +324,6 @@ footer {
 .contenedorPrecios {
   display: flex;
   flex-direction: column;
-  /*justify-content: space-evenly;*/
   align-items: center; }
   .contenedorPrecios h3,
   .contenedorPrecios p {
@@ -425,7 +439,7 @@ footer {
   margin: 5px;
   padding: 10px; }
   .nosotrosTexto p {
-    margin: 0;
+    margin: 10px 0px;
     font-size: calc(1rem + 0.25vw);
     text-align: justify; }
   .nosotrosTexto h3 {
@@ -441,27 +455,40 @@ footer {
 .containerImgEquipo {
   text-align: center; }
 
-@media (max-width: 500px) {
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  filter: invert(94%) sepia(76%) saturate(626%) hue-rotate(314deg) brightness(88%) contrast(88%); }
+
+.iconows {
+  width: 45px; }
+
+.ws {
+  display: none; }
+
+@media (max-width: 576px) {
   .mainBanner {
     height: 100vh;
     background-image: url("../img/BG-1-M.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
-    background-position-x: right; }
+    background-position-x: right;
+    background-image: url("../img/BG-1-S.webp"); }
   .precioBanner {
-    background-image: url("../img/BG-precios-2.webp"); }
+    background-image: url("../img/BG-precios-S.webp"); }
   .servicioBanner {
     background-image: url("../img/BG-servicios-2.webp"); }
   .contactoBanner {
-    background-image: url("../img/BG-contacto.webp"); }
+    background-image: url("../img/BG-contacto-S.webp"); }
   .galeriaBanner {
-    background-image: url("../img/BG-galeria2.jpg"); }
+    background-image: url("../img/BG-galeria-S.webp"); }
   .nosotrosBanner {
-    background-image: url("../img/BG-nosotros.jpeg");
+    background-image: url("../img/BG-nosotros.webp");
     background-position-x: center; }
   .contenedorHeader {
-    height: 50vh;
+    height: 60vh;
     width: 70%;
     position: absolute;
     top: 50vh;
@@ -486,7 +513,8 @@ footer {
       font-size: 0.9rem; }
   .testimonials {
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .cardTestimonial {
     justify-content: center;
     flex-direction: column;
@@ -509,7 +537,8 @@ footer {
     width: 95vw;
     height: 80vh; }
   .imgEquipoIndex {
-    max-width: 95vw; }
+    max-width: none;
+    width: 95vw; }
   .imgServicio {
     min-width: 300px; }
   .precioCard {
@@ -521,9 +550,16 @@ footer {
     /*align-items: center;*/ }
   .nosotrosTexto,
   .nosotrosImagen {
-    width: 100vw; } }
+    width: 100vw; }
+    .nosotrosTexto p,
+    .nosotrosImagen p {
+      text-align: center; }
+  .iconows {
+    display: none; }
+  .ws {
+    display: flex; } }
 
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .mainBanner {
     height: 100vh;
     background-image: url("../img/BG-1-M.webp");
@@ -532,15 +568,15 @@ footer {
     background-clip: content-box;
     background-position-x: right; }
   .precioBanner {
-    background-image: url("../img/BG-precios-2.webp"); }
+    background-image: url("../img/BG-precios-M.webp"); }
   .servicioBanner {
     background-image: url("../img/BG-servicios-2.webp"); }
   .contactoBanner {
-    background-image: url("../img/BG-contacto.webp"); }
+    background-image: url("../img/BG-contacto-S.webp"); }
   .galeriaBanner {
-    background-image: url("../img/BG-galeria2.jpg"); }
+    background-image: url("../img/BG-galeria-S.webp"); }
   .nosotrosBanner {
-    background-image: url("../img/BG-nosotros.jpeg");
+    background-image: url("../img/BG-nosotros.webp");
     background-position-x: center; }
   .contenedorHeader {
     height: 50vh;
@@ -556,7 +592,8 @@ footer {
     width: 50vw; }
   .testimonials {
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .cardTestimonial {
     justify-content: center;
     flex-direction: column;
@@ -584,4 +621,4 @@ footer {
     width: 100vw; }
     .nosotrosTexto p,
     .nosotrosImagen p {
-      text-align: start; } }
+      text-align: center; } }

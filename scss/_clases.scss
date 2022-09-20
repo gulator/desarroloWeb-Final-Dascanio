@@ -12,16 +12,29 @@
 
 .contenedorHeader {
     width: 450px;
-    /*margin: 10px 15px;*/
     position: absolute;
     top: 40vh;
     left: 15vw;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
+}
+
+.caja {
+    z-index: 2;
+    width: 100vw;
+    height: 118px;
+    background-color: $color-eerie-black;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.textoPrinc {
+    position: absolute;
+    z-index: 4;
 }
 
 h1 {
@@ -54,14 +67,15 @@ h2 {
     }
 }
 
-.boton{
+.boton {
     display: flex;
     justify-content: center;
-    a{
+
+    a {
         text-decoration: none;
         color: $color-darvys-grey;
     }
-    
+
 }
 
 
@@ -70,7 +84,8 @@ h2 {
     align-items: center;
     margin-left: 15px;
     position: relative;
-    z-index: 2;
+    /*z-index: 2;*/
+
 
 
     ul {
@@ -83,14 +98,14 @@ h2 {
 
         list-style: none;
         text-decoration: none;
-        margin: 1px;
+        margin: none;
         color: $color-naranja-claro;
         text-transform: uppercase;
         letter-spacing: 0.1em;
 
         &:hover {
             color: $color-naranja-fuerte;
-            
+
         }
     }
 }
@@ -116,11 +131,12 @@ h2 {
     background-image: url("../img/BG-contacto.webp");
 }
 
-.galeriaBanner{
+.galeriaBanner {
     background-image: url("../img/BG-galeria2.jpg");
 }
-.nosotrosBanner{
-    background-image: url("../img/BG-nosotros.jpeg");
+
+.nosotrosBanner {
+    background-image: url("../img/BG-nosotros.webp");
     background-position-x: center;
 }
 
@@ -305,6 +321,10 @@ footer {
         text-transform: uppercase;
     }
 }
+.alternativo{
+    --bs-gutter-x:1rem;
+}
+
 
 .equipo {
     @include displayCards;
@@ -323,7 +343,8 @@ footer {
         text-align: center;
     }
 }
-.muestra{
+
+.muestra {
     width: 30vw;
 }
 
@@ -333,8 +354,10 @@ footer {
     object-fit: cover;
     object-position: top;
 }
-.imgEquipoIndex{
-    max-width: 30vw;
+
+.imgEquipoIndex {
+    max-width: none;
+    width: 30vw;
 }
 
 
@@ -385,7 +408,6 @@ footer {
 .contenedorPrecios {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-evenly;*/
     align-items: center;
 
     h3,
@@ -398,15 +420,12 @@ footer {
         text-align: center;
         text-transform: uppercase;
         color: $color-naranja;
-
     }
 
     p {
         text-align: center;
 
     }
-
-
 }
 
 .subtitulo {
@@ -452,7 +471,7 @@ footer {
     justify-content: space-between;
     height: 300px;
     margin-bottom: 30px;
-    
+
 
 }
 
@@ -464,7 +483,8 @@ footer {
     color: $color-naranja-claro;
     border-radius: 3px;
     padding-left: 10px;
-    &:focus{
+
+    &:focus {
 
         outline: $color-naranja;
         border: 1px solid $color-naranja
@@ -504,34 +524,41 @@ footer {
         color: $color-darvys-grey;
     }
 }
-.galeria{
+
+.galeria {
     margin: 5px;
 }
-.img-galeria{
+
+.img-galeria {
     border-radius: 10px;
     border: 1px solid $color-naranja-claro;
     margin: 10px 0px;
 }
-.img-nosotros{    
+
+.img-nosotros {
     margin: 10px 0px;
 }
-.containerFig{
+
+.containerFig {
     margin: 0px
 }
 
-.textoDescripcion{
+.textoDescripcion {
     font-size: 1rem;
 }
-.centrado{
+
+.centrado {
     text-align: center;
     margin: 10px;
 }
-.nosotrosCentral{
-    
+
+.nosotrosCentral {
+
     display: flex;
 
 }
-.nosotrosTexto{
+
+.nosotrosTexto {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -539,29 +566,44 @@ footer {
     width: 50vw;
     margin: 5px;
     padding: 10px;
-    
-    p{
-        
-        margin: 0;
+
+    p {
+
+        margin: 10px 0px;
         font-size: calc(1rem + 0.25vw);
         text-align: justify;
     }
-    h3{
+
+    h3 {
         color: $color-naranja;
         text-transform: uppercase;
         text-align: center;
-        &::after{
+
+        &::after {
             color: red;
         }
     }
 
 }
-.nosotrosImagen{
+
+.nosotrosImagen {
     width: 50vw;
-    
+
 }
-.containerImgEquipo{
+
+.containerImgEquipo {
     text-align: center;
 }
-
-
+.whatsapp{
+    
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    filter: $color-naranja-filter2;
+}
+.iconows{
+    width: 45px;
+}
+.ws{
+    display: none;
+}

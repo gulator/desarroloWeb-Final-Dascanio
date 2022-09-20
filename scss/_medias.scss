@@ -1,10 +1,11 @@
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     .mainBanner {
         @include bannerCentral;
+        background-image: url("../img/BG-1-S.webp");
     }
 
     .precioBanner {
-        background-image: url("../img/BG-precios-2.webp");
+        background-image: url("../img/BG-precios-S.webp");
     }
 
     .servicioBanner {
@@ -13,21 +14,21 @@
     }
 
     .contactoBanner {
-        background-image: url("../img/BG-contacto.webp");
+        background-image: url("../img/BG-contacto-S.webp");
     }
 
     .galeriaBanner {
-        background-image: url("../img/BG-galeria2.jpg");
+        background-image: url("../img/BG-galeria-S.webp");
        
     }
 
     .nosotrosBanner {
-        background-image: url("../img/BG-nosotros.jpeg");
+        background-image: url("../img/BG-nosotros.webp");
         background-position-x: center;
     }
 
     .contenedorHeader {
-        height: 50vh;
+        height: 60vh;
         width: 70%;
         position: absolute;
         top: 50vh;
@@ -72,6 +73,7 @@
     .testimonials {
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
 
     .cardTestimonial {
@@ -110,7 +112,8 @@
 
     }
     .imgEquipoIndex{
-        max-width: 95vw;
+        max-width: none;
+        width: 95vw;
     }
 
     .imgServicio {
@@ -134,17 +137,26 @@
     .nosotrosTexto,
     .nosotrosImagen {
         width: 100vw;
+        p {
+            text-align: center;
+         }
 
+    }
+    .iconows{
+        display: none;
+    }
+    .ws{
+        display: flex;
     }
 }
 
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
     .mainBanner {
         @include bannerCentral
     }
 
     .precioBanner {
-        background-image: url("../img/BG-precios-2.webp");
+        background-image: url("../img/BG-precios-M.webp");
     }
 
     .servicioBanner {
@@ -152,16 +164,16 @@
     }
 
     .contactoBanner {
-        background-image: url("../img/BG-contacto.webp");
+        background-image: url("../img/BG-contacto-S.webp");
     }
 
     .galeriaBanner {
-        background-image: url("../img/BG-galeria2.jpg");
+        background-image: url("../img/BG-galeria-S.webp");
 
     }
 
     .nosotrosBanner {
-        background-image: url("../img/BG-nosotros.jpeg");
+        background-image: url("../img/BG-nosotros.webp");
         background-position-x: center;
     }
 
@@ -188,6 +200,7 @@
     .testimonials {
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
 
     .cardTestimonial {
@@ -234,7 +247,7 @@
     .nosotrosImagen {
         width: 100vw;
         p {
-           text-align: start;
+           text-align: center;
         }
     
     }   
